@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\la">
+      <UniqueIdentifier>{c8a092f4-98ec-4765-81b1-dfc1f77570ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\la\netio">
+      <UniqueIdentifier>{b761db18-c1a6-428b-9c6a-184d124b3584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\la\netio\internals">
+      <UniqueIdentifier>{d03c8112-a922-458a-85b7-739f64bce63e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\la\lcom">
+      <UniqueIdentifier>{380e8589-966e-453d-a613-d0063f24af2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\la\lcom\internals">
+      <UniqueIdentifier>{7435adea-e25e-42c3-8821-967996b7a12d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\la\cxxUtils">
+      <UniqueIdentifier>{0ac3fc09-55ac-48a3-9c24-6f7eb298f1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\la\cxxUtils\internals">
+      <UniqueIdentifier>{9768a87d-2d1e-41d9-8df0-21290bf5fd28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\PowerMate\DataBufferUtilities.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\GenericEnums.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\LcomAmplifier.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\LcomController.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\PowermateController.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\VolumeController.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\netio\netio.h">
+      <Filter>Source Files\la\netio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\netio\netio.hpp">
+      <Filter>Source Files\la\netio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\netio\networkInterfaces.hpp">
+      <Filter>Source Files\la\netio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\netio\internals\exports.hpp">
+      <Filter>Source Files\la\netio\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\discovery.h">
+      <Filter>Source Files\la\lcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\lcom.h">
+      <Filter>Source Files\la\lcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\lcom.hpp">
+      <Filter>Source Files\la\lcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\internals\command.hpp">
+      <Filter>Source Files\la\lcom\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\internals\commons.h">
+      <Filter>Source Files\la\lcom\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\internals\defines.hpp">
+      <Filter>Source Files\la\lcom\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\internals\error.hpp">
+      <Filter>Source Files\la\lcom\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\internals\objectList.hpp">
+      <Filter>Source Files\la\lcom\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\internals\unit.hpp">
+      <Filter>Source Files\la\lcom\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\lcom\internals\batch.hpp">
+      <Filter>Source Files\la\lcom\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\cxxUtils.h">
+      <Filter>Source Files\la\cxxUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\dataBuffer.h">
+      <Filter>Source Files\la\cxxUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\endianSwapper.h">
+      <Filter>Source Files\la\cxxUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\enums.h">
+      <Filter>Source Files\la\cxxUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\math.h">
+      <Filter>Source Files\la\cxxUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\serialization.h">
+      <Filter>Source Files\la\cxxUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\specialPaths.h">
+      <Filter>Source Files\la\cxxUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\stringUtils.h">
+      <Filter>Source Files\la\cxxUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\threadUtils.h">
+      <Filter>Source Files\la\cxxUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\internals\endian.h">
+      <Filter>Source Files\la\cxxUtils\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PowerMate\la\cxxUtils\internals\exports.h">
+      <Filter>Source Files\la\cxxUtils\internals</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\PowerMate\LcomAmplifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PowerMate\LcomController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PowerMate\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PowerMate\PowermateController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PowerMate\VolumeController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
