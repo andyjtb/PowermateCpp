@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A12520D11D9FFA8800693E46 /* libhidapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A12520C81D9FFA8800693E46 /* libhidapi.a */; };
+		A12520D21D9FFA8800693E46 /* hidapi.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = A12520CB1D9FFA8800693E46 /* hidapi.lib */; };
+		A12520D31D9FFA8800693E46 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A12520CC1D9FFA8800693E46 /* main.cpp */; };
+		A12520D41D9FFA8800693E46 /* PowermateController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A12520CD1D9FFA8800693E46 /* PowermateController.cpp */; };
+		A12520D71D9FFC0F00693E46 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12520D61D9FFC0F00693E46 /* CoreFoundation.framework */; };
+		A12520D91D9FFC3100693E46 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12520D81D9FFC3100693E46 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1C4F0D91D707CCC007FA7DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A12520C71D9FFA8800693E46 /* hidapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hidapi.h; sourceTree = "<group>"; };
+		A12520C81D9FFA8800693E46 /* libhidapi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhidapi.a; sourceTree = "<group>"; };
+		A12520CA1D9FFA8800693E46 /* hidapi.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = hidapi.dll; sourceTree = "<group>"; };
+		A12520CB1D9FFA8800693E46 /* hidapi.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = hidapi.lib; sourceTree = "<group>"; };
+		A12520CC1D9FFA8800693E46 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = PowermateCpp/main.cpp; sourceTree = SOURCE_ROOT; };
+		A12520CD1D9FFA8800693E46 /* PowermateController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PowermateController.cpp; path = PowermateCpp/PowermateController.cpp; sourceTree = SOURCE_ROOT; };
+		A12520CE1D9FFA8800693E46 /* PowermateController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = PowermateController.hpp; path = PowermateCpp/PowermateController.hpp; sourceTree = SOURCE_ROOT; };
+		A12520D61D9FFC0F00693E46 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		A12520D81D9FFC3100693E46 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		A1C4F0DB1D707CCC007FA7DF /* PowerMate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PowerMate; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1C4F0D81D707CCC007FA7DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12520D91D9FFC3100693E46 /* IOKit.framework in Frameworks */,
+				A12520D71D9FFC0F00693E46 /* CoreFoundation.framework in Frameworks */,
+				A12520D21D9FFA8800693E46 /* hidapi.lib in Frameworks */,
+				A12520D11D9FFA8800693E46 /* libhidapi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A12520C61D9FFA8800693E46 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				A12520C71D9FFA8800693E46 /* hidapi.h */,
+				A12520C81D9FFA8800693E46 /* libhidapi.a */,
+				A12520C91D9FFA8800693E46 /* Windows */,
+			);
+			name = Libs;
+			path = PowermateCpp/Libs;
+			sourceTree = SOURCE_ROOT;
+		};
+		A12520C91D9FFA8800693E46 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				A12520CA1D9FFA8800693E46 /* hidapi.dll */,
+				A12520CB1D9FFA8800693E46 /* hidapi.lib */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		A1C4F0D21D707CCC007FA7DF = {
+			isa = PBXGroup;
+			children = (
+				A12520D81D9FFC3100693E46 /* IOKit.framework */,
+				A12520D61D9FFC0F00693E46 /* CoreFoundation.framework */,
+				A1C4F0DD1D707CCC007FA7DF /* PowerMate */,
+				A1C4F0DC1D707CCC007FA7DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C4F0DC1D707CCC007FA7DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C4F0DB1D707CCC007FA7DF /* PowerMate */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C4F0DD1D707CCC007FA7DF /* PowerMate */ = {
+			isa = PBXGroup;
+			children = (
+				A12520C61D9FFA8800693E46 /* Libs */,
+				A12520CC1D9FFA8800693E46 /* main.cpp */,
+				A12520CD1D9FFA8800693E46 /* PowermateController.cpp */,
+				A12520CE1D9FFA8800693E46 /* PowermateController.hpp */,
+			);
+			path = PowerMate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1C4F0DA1D707CCC007FA7DF /* PowerMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C4F0E21D707CCC007FA7DF /* Build configuration list for PBXNativeTarget "PowerMate" */;
+			buildPhases = (
+				A1C4F0D71D707CCC007FA7DF /* Sources */,
+				A1C4F0D81D707CCC007FA7DF /* Frameworks */,
+				A1C4F0D91D707CCC007FA7DF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PowerMate;
+			productName = PowerMate;
+			productReference = A1C4F0DB1D707CCC007FA7DF /* PowerMate */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C4F0D31D707CCC007FA7DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Andy;
+				TargetAttributes = {
+					A1C4F0DA1D707CCC007FA7DF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A1C4F0D61D707CCC007FA7DF /* Build configuration list for PBXProject "PowerMate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1C4F0D21D707CCC007FA7DF;
+			productRefGroup = A1C4F0DC1D707CCC007FA7DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C4F0DA1D707CCC007FA7DF /* PowerMate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1C4F0D71D707CCC007FA7DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12520D41D9FFA8800693E46 /* PowermateController.cpp in Sources */,
+				A12520D31D9FFA8800693E46 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1C4F0E01D707CCC007FA7DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.9;
+			};
+			name = Debug;
+		};
+		A1C4F0E11D707CCC007FA7DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx10.9;
+			};
+			name = Release;
+		};
+		A1C4F0E31D707CCC007FA7DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PowermateCpp/Libs";
+				LD_RUNPATH_SEARCH_PATHS = /Users/andy/Desktop/Programming/Projects/PowerMate/PowerMate/la/Mac;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin/lib,
+					"$(SDKROOT)/usr/lib/lib",
+					"/usr/local/Cellar/hidapi/0.8.0-rc1/lib",
+					"$(PROJECT_DIR)/PowermateCpp/Libs",
+					"$(PROJECT_DIR)/PowermateCpp/Libs/Windows",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		A1C4F0E41D707CCC007FA7DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PowermateCpp/Libs";
+				LD_RUNPATH_SEARCH_PATHS = /Users/andy/Desktop/Programming/Projects/PowerMate/PowerMate/la/Mac;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/bin/lib,
+					"$(SDKROOT)/usr/lib/lib",
+					"/usr/local/Cellar/hidapi/0.8.0-rc1/lib",
+					"$(PROJECT_DIR)/PowermateCpp/Libs",
+					"$(PROJECT_DIR)/PowermateCpp/Libs/Windows",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C4F0D61D707CCC007FA7DF /* Build configuration list for PBXProject "PowerMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C4F0E01D707CCC007FA7DF /* Debug */,
+				A1C4F0E11D707CCC007FA7DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C4F0E21D707CCC007FA7DF /* Build configuration list for PBXNativeTarget "PowerMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C4F0E31D707CCC007FA7DF /* Debug */,
+				A1C4F0E41D707CCC007FA7DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C4F0D31D707CCC007FA7DF /* Project object */;
+}
