@@ -20,8 +20,8 @@ Include the "PowermateController.hpp" header file
 
 Create a PowermateController object and register your callback functions for Powermate actions. These callbacks are function objects, so can be lambdas, if preferred:
 
-`
-  PowermateController powermate;
+```cpp 
+  PowermateController powermate; 
 
   powermate.setPowermateMovedHandler([](bool isAntiClockwise, int ticks)
   {
@@ -29,7 +29,7 @@ Create a PowermateController object and register your callback functions for Pow
       
       std::cout << "Moved: " << ticks << direction << "\n";
   });
-`
+```
 
 These callbacks will happen on the powermate thread so guard data access appropriately
 
