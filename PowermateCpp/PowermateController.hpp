@@ -54,11 +54,12 @@ public:
   
   void setLedBrightness(uint8_t brightness);
   
-  void setPulsing (bool shouldPulse);
+  void setPulseSpeed (int pulseSpeed);
+  void setPulsingMode (bool pulseType, bool pulseOn);
   
   const bool isConnected() const { return connectionStatus; }
 private:
-  enum Commands { StaticBrightness = 0x01, Pulsing = 0x03 };
+  enum Commands { StaticBrightness = 0x01, PulseAsleep = 0x02, PulseAwake = 0x03, PulseMode = 0x04 };
 
   void detectorLoop();
   

@@ -91,15 +91,51 @@ void PowermateController::setLedBrightness(uint8_t brightness)
   }
 }
 
-void PowermateController::setPulsing(bool shouldPulse)
+void PowermateController::setPulseSpeed(int pulseSpeed)
 {
+  int pulseTable = 0;
+  
+  if (pulseSpeed < 255)
+  {
+    pulseTable = 0;
+    pulseSpeed = (254 - pulseSpeed);
+  }
+  else if (pulseSpeed == 255)
+  {
+    pulseTable = 1;
+    pulseSpeed = 0;
+  }
+  else
+  {
+    pulseTable = 2;
+    pulseSpeed -= 255;
+  }
+  
   unsigned char buffer[9];
   buffer[0] = 0x00;
   buffer[1] = 0x41;
   buffer[2] = 0x01;
-  buffer[3] = Commands::Pulsing;
-  buffer[4] = 0x00;
-  buffer[5] = shouldPulse ? 0x01 : 0x00;
+  buffer[3] = Commands::PulseMode;
+  buffer[4] = pulseTable;
+  buffer[5] = pulseSpeed;
+  buffer[6] = 0x00;
+  buffer[7] = 0x00;
+  buffer[8] = 0x00;
+  
+  hid_send_feature_report(handle, buffer, 9);
+}
+
+void PowermateController::setPulsingMode(bool pulseType, bool pulseOn)
+{
+  char command = pulseType ? PulseAsleep : PulseAwake;
+  
+  unsigned char buffer[9];
+  buffer[0] = 0x00;
+  buffer[1] = 0x41;
+  buffer[2] = 0x01;
+  buffer[3] = command;
+  buffer[4] = pulseOn ? 0x01 : 0x0;
+  buffer[5] = 0x00;
   buffer[6] = 0x00;
   buffer[7] = 0x00;
   buffer[8] = 0x00;

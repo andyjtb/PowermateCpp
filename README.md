@@ -31,6 +31,8 @@ Create a PowermateController object and register your callback functions for Pow
   });
 `
 
+These callbacks will happen on the powermate thread so guard data access appropriately
+
 Then start the controller:
 
 `powermate.start();`
