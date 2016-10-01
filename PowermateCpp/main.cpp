@@ -46,7 +46,6 @@ int main(int argc, const char * argv[])
  
   powermate.start();
   
-  powermate.setPulsing(true);
   
   int a = 0;
   std::cin>> a;
